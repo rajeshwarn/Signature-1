@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Signature.IPASign.Utilities\Signature.IPASign.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BouncyCastle">
+      <HintPath>Components\BouncyCastle.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Components\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PListNet">
+      <HintPath>Components\PListNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
