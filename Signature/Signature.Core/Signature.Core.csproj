@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common\Common.csproj" />
+    <Folder Include="AppleDeveloperManager\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AppleDeveloperManager\" />
+    <ProjectReference Include="..\Common\Common\Common.csproj" />
   </ItemGroup>
 
 </Project>
