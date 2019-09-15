@@ -23,6 +23,7 @@ namespace Signature.Controllers
 
         public ActionResult GetMobileConfig()
         {
+			
 
             return View();
         }

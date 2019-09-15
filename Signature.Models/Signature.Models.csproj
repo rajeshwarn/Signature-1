@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppleDeveloper\Device.cs" />
+    <Compile Include="AppleDeveloper\Profile.cs" />
     <Compile Include="AppleDeveloper\Request.cs" />
     <Compile Include="AppleDeveloper\Response.cs" />
     <Compile Include="AppleDeveloper\User.cs" />

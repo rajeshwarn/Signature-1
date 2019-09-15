@@ -287,6 +287,10 @@
       <Project>{1badfa44-81d5-4715-b89a-70898da03323}</Project>
       <Name>Signature.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Signature.MobileConfig.Utilities\Signature.MobileConfig.Utilities.csproj">
+      <Project>{e93c03f4-cbc4-428d-be72-7849733e79a5}</Project>
+      <Name>Signature.MobileConfig.Utilities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Signature.Models\Signature.Models.csproj">
       <Project>{597fee01-810a-4354-b48b-1294dd02b509}</Project>
       <Name>Signature.Models</Name>

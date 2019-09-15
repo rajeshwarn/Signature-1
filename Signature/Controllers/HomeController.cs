@@ -1,4 +1,5 @@
 ﻿using Signature.Core.AppleDeveloperManager.Impl;
+using Signature.Core.SignatureManager.Impl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,10 @@ namespace Signature.Controllers
         {
             ViewBag.Title = "Home Page";
 
-			var apple = new AppleDeveloperManager();
-			apple.GetDevices();
+			// var apple = new AppleDeveloperManager();
+			// apple.GetDevices();
+			var signature = new SignatureManager();
+			signature.GetMobileConfig();
 
 			return View();
         }
