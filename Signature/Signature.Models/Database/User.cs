@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Signature.Model
+namespace Signature.Models.Database
 {
     [Table("User")]
     public class User

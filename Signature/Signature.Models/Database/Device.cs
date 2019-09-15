@@ -1,7 +1,7 @@
 ﻿using Dapper.Contrib.Extensions;
 using System;
 
-namespace Signature.Model
+namespace Signature.Models.Database
 {
     [Table("Device")]
     public class Device
