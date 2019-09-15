@@ -113,5 +113,33 @@ namespace Signature.Core.AppleDeveloperManager.Impl
 
 		#endregion
 
+		#region Profiles 
+
+		/// <summary>
+		/// 新增装置
+		/// </summary>
+		/// <param name="device"></param>
+		/// <returns></returns>
+		public ReturnValue<bool> CreateProfile(Request<DeviceCreate> device)
+		{
+			var httpstatus = HttpStatusCode.OK;
+			var token = GenerateToken();
+			var url = $@"{ApiUrl}/v1/devices";
+			var json = HttpHelper.BasePost(JsonConvert.SerializeObject(device), $"{ApiUrl}{url}", Encoding.UTF8,
+				(req) => {
+					req.Headers.Add("Authorization", token);
+					return req;
+				},
+				(resp, status, data) =>
+				{
+					httpstatus = status;
+					return data;
+				});
+			if (httpstatus == HttpStatusCode.Created) return new ReturnValue<bool>();
+			return new ReturnValue<bool>(false, false, string.Empty);
+		}
+
+		#endregion
+
 	}
 }
