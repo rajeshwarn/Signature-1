@@ -7,17 +7,18 @@ namespace Signature.Models.AppleDeveloper
 	public class Response<T>
 	{
 		public T data { get; set; }
-		public Links links { get; set; }
+		public PagedDocumentLinks links { get; set; }
+		public PagingInformation meta { get; set; }
 	}
 
-	public class Links
+	public class PagedDocumentLinks
 	{
 		public string first { get; set; }
 		public string next { get; set; }
 		public string self { get; set; }
 	}
 
-	public class Meta
+	public class PagingInformation
 	{
 		public Paging paging { get; set; }
 	}
@@ -26,5 +27,10 @@ namespace Signature.Models.AppleDeveloper
 	{
 		public int total { get; set; }
 		public int limit { get; set; }
+	}
+
+	public class ResourceLinks
+	{
+		public string self { get; set; }
 	}
 }

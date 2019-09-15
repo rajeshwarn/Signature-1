@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Signature.Core.AppleDeveloperManager.Impl;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,10 @@ namespace Signature.Controllers
         {
             ViewBag.Title = "Home Page";
 
-            return View();
+			var apple = new AppleDeveloperManager();
+			apple.GetDevices();
+
+			return View();
         }
     }
 }
